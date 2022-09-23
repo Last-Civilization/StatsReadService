@@ -22,4 +22,11 @@ class StatsRepositoryAdapter implements StatsRepository {
                 .map(MAPPER::toDomain);
     }
 
+    @Override
+    public Stats save(Stats stats) {
+        StatsEntity statsEntity = MAPPER.toEntity(stats);
+        StatsEntity savedStatsEntity = statsJpaRepository.save(statsEntity);
+        return MAPPER.toDomain(savedStatsEntity);
+    }
+
 }

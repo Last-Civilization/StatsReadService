@@ -7,4 +7,6 @@ import java.util.Optional;
 public interface StatsRepository {
 
     Optional<Stats> findById(long id);
+
+    Stats save(Stats stats);
 }

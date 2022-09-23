@@ -10,4 +10,5 @@ interface EntityMapper {
     EntityMapper MAPPER = Mappers.getMapper(EntityMapper.class);
 
     Stats toDomain(StatsEntity statsEntity);
+    StatsEntity toEntity(Stats stats);
 }
