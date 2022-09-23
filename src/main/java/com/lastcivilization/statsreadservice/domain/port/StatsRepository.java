@@ -4,7 +4,7 @@ import com.lastcivilization.statsreadservice.domain.Stats;
 
 import java.util.Optional;
 
-public interface StastRepository {
+public interface StatsRepository {
 
     Optional<Stats> findById(long id);
 }
