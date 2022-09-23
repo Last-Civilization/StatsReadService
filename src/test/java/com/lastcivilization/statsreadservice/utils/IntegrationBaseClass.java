@@ -32,7 +32,7 @@ public class IntegrationBaseClass {
     @DynamicPropertySource
     private static void init(DynamicPropertyRegistry registry){
         registry.add("spring.datasource.url", () -> "jdbc:tc:postgresql:14-alpine:///test");
-        registry.add("spring.jpa.hibernate.ddl-auto", () -> "create-drop");
+        registry.add("spring.jpa.hibernate.ddl-auto", () -> "update");
         registry.add("eureka.client.register-with-eureka", () -> "false");
         registry.add("eureka.client.fetch-registry", () -> "false");
     }
