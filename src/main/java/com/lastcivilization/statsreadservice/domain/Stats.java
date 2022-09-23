@@ -1,6 +1,6 @@
 package com.lastcivilization.statsreadservice.domain;
 
-class Stats {
+public class Stats {
 
     private Long id;
     private Lvl lvl;

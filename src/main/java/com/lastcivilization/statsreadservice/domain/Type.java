@@ -1,6 +1,6 @@
 package com.lastcivilization.statsreadservice.domain;
 
-enum Type {
+public enum Type {
     STRENGTH,
     DAMAGE,
     DEXTERITY,
