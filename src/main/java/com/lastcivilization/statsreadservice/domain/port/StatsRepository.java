@@ -1,12 +1,12 @@
 package com.lastcivilization.statsreadservice.domain.port;
 
-import com.lastcivilization.statsreadservice.domain.Stats;
+import com.lastcivilization.statsreadservice.domain.view.StatsModel;
 
 import java.util.Optional;
 
 public interface StatsRepository {
 
-    Optional<Stats> findById(long id);
+    Optional<StatsModel> findById(long id);
 
-    Stats save(Stats stats);
+    StatsModel save(StatsModel stats);
 }

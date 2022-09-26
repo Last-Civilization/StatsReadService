@@ -1,6 +1,6 @@
 package com.lastcivilization.statsreadservice.domain;
 
-public class Lvl {
+class Lvl {
 
     private Long id;
     private int current;

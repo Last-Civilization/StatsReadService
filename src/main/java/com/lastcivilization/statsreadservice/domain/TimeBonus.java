@@ -2,7 +2,7 @@ package com.lastcivilization.statsreadservice.domain;
 
 import java.time.LocalDateTime;
 
-public class TimeBonus {
+class TimeBonus {
 
     private Long id;
     private LocalDateTime endDate;

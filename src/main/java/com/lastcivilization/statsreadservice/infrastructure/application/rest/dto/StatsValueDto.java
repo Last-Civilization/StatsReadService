@@ -1,4 +1,4 @@
-package com.lastcivilization.statsreadservice.domain.dto;
+package com.lastcivilization.statsreadservice.infrastructure.application.rest.dto;
 
 public record StatsValueDto(
         Long id,

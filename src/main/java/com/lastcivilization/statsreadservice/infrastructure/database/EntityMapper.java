@@ -1,6 +1,6 @@
 package com.lastcivilization.statsreadservice.infrastructure.database;
 
-import com.lastcivilization.statsreadservice.domain.Stats;
+import com.lastcivilization.statsreadservice.domain.view.StatsModel;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -9,6 +9,6 @@ interface EntityMapper {
 
     EntityMapper MAPPER = Mappers.getMapper(EntityMapper.class);
 
-    Stats toDomain(StatsEntity statsEntity);
-    StatsEntity toEntity(Stats stats);
+    StatsModel toDomain(StatsEntity statsEntity);
+    StatsEntity toEntity(StatsModel stats);
 }

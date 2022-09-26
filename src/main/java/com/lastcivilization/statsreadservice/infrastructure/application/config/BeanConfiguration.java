@@ -1,8 +1,7 @@
 package com.lastcivilization.statsreadservice.infrastructure.application.config;
 
-import com.lastcivilization.statsreadservice.domain.StatsServiceImp;
+import com.lastcivilization.statsreadservice.domain.StatsService;
 import com.lastcivilization.statsreadservice.domain.port.StatsRepository;
-import com.lastcivilization.statsreadservice.domain.port.StatsService;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -17,6 +16,6 @@ class BeanConfiguration {
 
     @Bean
     StatsService statsService(StatsRepository statsRepository){
-        return new StatsServiceImp(statsRepository);
+        return new StatsService(statsRepository);
     }
 }
