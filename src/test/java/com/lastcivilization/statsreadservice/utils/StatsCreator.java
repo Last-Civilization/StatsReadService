@@ -31,11 +31,11 @@ class StatsCreator {
                 ),
                 new StatsValueModel(
                         null,
-                        0,
+                        1,
                         new TimeBonusModel(
                                 null,
                                 LocalDateTime.now(),
-                                0
+                                100
                         ),
                         "DAMAGE"
                 ),
