@@ -45,4 +45,13 @@ class StatsControllerTest extends IntegrationBaseClass {
         //then
         getResult.andExpect(status().isNotFound());
     }
+
+    @Test
+    void shouldReturnValidationExceptionStatusWhileGettingById() throws Exception {
+        //given
+        //when
+        ResultActions getResult = mockMvc.perform(get("/stats/0"));
+        //then
+        getResult.andExpect(status().isBadRequest());
+    }
 }
