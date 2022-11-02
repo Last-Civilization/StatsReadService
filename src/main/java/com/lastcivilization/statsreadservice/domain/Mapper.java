@@ -5,7 +5,11 @@ import com.lastcivilization.statsreadservice.domain.view.StatsModel;
 import com.lastcivilization.statsreadservice.domain.view.StatsValueModel;
 import com.lastcivilization.statsreadservice.domain.view.TimeBonusModel;
 
-class Mapper {
+final class Mapper {
+
+    private Mapper(){
+        throw new RuntimeException("You can not create instance of this class!");
+    }
 
     static Stats toDomain(StatsModel statsModel){
         return Stats.Builder.aStats()
